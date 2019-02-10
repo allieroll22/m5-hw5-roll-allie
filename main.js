@@ -28,18 +28,43 @@ document.getElementsByTag("main").addEventListener("mouseenter",
 
 );
 */
+/*
+var backgroundColor = document.querySelectorAll('#bgcolor');
 
-var backgroundColor = document.querySelectorAll('bgcolor');
-
-function changeColor () {
-  this.classList.toggle('style.backgroundColor = "#000000"');
-};
-
+document.querySelectorAll('#bgcolor').addEventListener("mouseenter",
+  function () {
+    document.querySelectorAll('#bgcolor').style.backgroundColor = "#CA1111";
+  },
+);
+/*
 for (i=0; i<backgroundColor; i++) {
   backgroundColor[i].addEventListener('mouseenter', changeColor);
   backgroundColor[i].addEventListener('mouseleave', changeColor);
 }
+*/
+
+
+/*
+console.log(backgroundColor); */
 
 
 
-console.log(backgroundColor);
+document.getElementById("box1").onclick = function() {myFunction()};
+
+function myFunction() {
+  document.getElementById("box1").innerHTML = "Oooh - so close but no cigar";
+};
+
+
+
+document.getElementById("box2").onclick = function() {myFunction1()};
+
+function myFunction1() {
+  document.getElementById("box2").innerHTML = "DING DING DING - We have a winner";
+}
+
+document.getElementById("box3").onclick = function() {myFunction2()};
+
+function myFunction2() {
+  document.getElementById("box3").innerHTML = "Oops, butter luck next time";
+}

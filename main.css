@@ -35,15 +35,15 @@ div {
   box-shadow: 10px 10px 5px grey;
 }
 
-.box1 {
+#box1 {
   background-color: yellow;
 }
 
-.box2 {
+#box2 {
   background-color: #4efcf9;
 }
 
-.box3 {
+#box3 {
   background-color: #7ffc41;
 }
 @media (min-width:600px) {
