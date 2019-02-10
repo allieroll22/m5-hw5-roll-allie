@@ -14,9 +14,20 @@ clickThree.onclick = function() {
   alert("Oops, butter luck next time")
 }
 
-
-var bgFunction = document.getElementsByTag("div");
-
+var bgFunction = document.querySelectorAll("div");
 bgFunction.onmouseenter = function () {
   bgFunction.style.backgroundColor = "#DDDDDD";
+};
+
+/*
+bgFunction.addEventListener("onmouseenter",function () {
+  bgFunction.style.backgroundColor = "#DDDDDD";
+}, false);
+
+
+/*
+document.querySelectorAll("div").addEventListener("mouseenter", mouseEnter);
+function mouseEnter () {
+  document.getElementsByTagName("div").style.backgroundColor = "black";
 }
+*/
