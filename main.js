@@ -48,23 +48,24 @@ for (i=0; i<backgroundColor; i++) {
 console.log(backgroundColor); */
 
 
-
-document.getElementById("box1").onclick = function() {myFunction()};
-
-function myFunction() {
-  document.getElementById("box1").innerHTML = "Oooh - so close but no cigar";
-};
-
-
-
-document.getElementById("box2").onclick = function() {myFunction1()};
-
-function myFunction1() {
-  document.getElementById("box2").innerHTML = "DING DING DING - We have a winner";
+var clickOne = document.getElementById("box1");
+clickOne.onclick = function() {
+  alert("Oooh - so close but no cigar")
 }
 
-document.getElementById("box3").onclick = function() {myFunction2()};
+var clickTwo = document.getElementById("box2");
+clickTwo.onclick = function() {
+  alert("DING DING DING - We have a winner")
+}
 
-function myFunction2() {
-  document.getElementById("box3").innerHTML = "Oops, butter luck next time";
+var clickThree = document.getElementById("box3");
+clickThree.onclick = function() {
+  alert("Oops, butter luck next time")
+}
+
+
+var bgFunction = document.getElementsByTag("div");
+
+bgFunction.onmouseenter = function () {
+  bgFunction.style.backgroundColor = "#DDDDDD";
 }
