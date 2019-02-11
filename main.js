@@ -21,7 +21,7 @@ clickThree.onclick = function() {
   document.getElementById("button").style.display = "inline";
 }
 
-//Background Color Change
+//Background Color Change pg. 265
 var bgFunction = document.getElementById("box1");
 var bgFunction1 = document.getElementById("box2");
 var bgFunction2 = document.getElementById("box3");
