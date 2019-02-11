@@ -14,20 +14,32 @@ clickThree.onclick = function() {
   alert("Oops, butter luck next time")
 }
 
-var bgFunction = document.querySelectorAll("div");
-bgFunction.onmouseenter = function () {
-  bgFunction.style.backgroundColor = "#DDDDDD";
-};
 
-/*
-bgFunction.addEventListener("onmouseenter",function () {
+
+//Background Color Change 
+var bgFunction = document.getElementById("box1");
+var bgFunction1 = document.getElementById("box2");
+var bgFunction2 = document.getElementById("box3");
+
+
+bgFunction.addEventListener("mouseover", function () {
   bgFunction.style.backgroundColor = "#DDDDDD";
+},false);
+bgFunction.addEventListener("mouseout", function () {
+  bgFunction.style.backgroundColor = "yellow";
 }, false);
 
 
-/*
-document.querySelectorAll("div").addEventListener("mouseenter", mouseEnter);
-function mouseEnter () {
-  document.getElementsByTagName("div").style.backgroundColor = "black";
-}
-*/
+bgFunction1.addEventListener("mouseover", function () {
+  bgFunction1.style.backgroundColor = "#DDDDDD";
+},false);
+bgFunction1.addEventListener("mouseout", function () {
+  bgFunction1.style.backgroundColor = "#4efcf9";
+}, false);
+
+bgFunction2.addEventListener("mouseover", function () {
+  bgFunction2.style.backgroundColor = "#DDDDDD";
+},false);
+bgFunction2.addEventListener("mouseout", function () {
+  bgFunction2.style.backgroundColor = "#7ffc41";
+}, false);
